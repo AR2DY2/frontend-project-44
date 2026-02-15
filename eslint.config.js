@@ -1,6 +1,6 @@
-import globals from 'globals';
-import js from '@eslint/js';
-import stylisticJs from '@stylistic/eslint-plugin-js';
+import globals from 'globals'
+import js from '@eslint/js'
+import stylisticJs from '@stylistic/eslint-plugin-js'
 
 export default [
   js.configs.recommended,
@@ -20,11 +20,11 @@ export default [
       '@stylistic/js/indent': ['error', 2],
       '@stylistic/js/linebreak-style': ['error', 'unix'],
       '@stylistic/js/quotes': ['error', 'single'],
-      '@stylistic/js/semi': ['error', 'always'],
+      '@stylistic/js/semi': ['error', 'never'],
       '@stylistic/js/comma-dangle': ['error', 'always-multiline'],
       '@stylistic/js/object-curly-spacing': ['error', 'always'],
       '@stylistic/js/array-bracket-spacing': ['error', 'never'],
       'no-console': 'off',
     },
   },
-];
+]
