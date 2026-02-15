@@ -7,7 +7,8 @@
     "url": "https://github.com/AR2DY2/frontend-project-44/issues"
   },
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "repository": {
     "type": "git",
