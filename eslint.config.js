@@ -1,6 +1,7 @@
 import globals from 'globals'
 import js from '@eslint/js'
-import stylisticJs from '@stylistic/eslint-plugin-js'
+
+import stylistic from '@stylistic/eslint-plugin'
 
 export default [
   js.configs.recommended,
@@ -13,17 +14,21 @@ export default [
         ...globals.es2021,
       },
     },
+
     plugins: {
-      '@stylistic/js': stylisticJs,
+      '@stylistic': stylistic,
     },
     rules: {
-      '@stylistic/js/indent': ['error', 2],
-      '@stylistic/js/linebreak-style': ['error', 'unix'],
-      '@stylistic/js/quotes': ['error', 'single'],
-      '@stylistic/js/semi': ['error', 'never'],
-      '@stylistic/js/comma-dangle': ['error', 'always-multiline'],
-      '@stylistic/js/object-curly-spacing': ['error', 'always'],
-      '@stylistic/js/array-bracket-spacing': ['error', 'never'],
+      '@stylistic/indent': ['error', 2, { 'SwitchCase': 1 }],
+      '@stylistic/linebreak-style': ['error', 'unix'],
+      '@stylistic/quotes': ['error', 'single'],
+      '@stylistic/semi': ['error', 'never'],
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/object-curly-spacing': ['error', 'always'],
+      '@stylistic/array-bracket-spacing': ['error', 'never'],
+      
+      '@stylistic/brace-style': ['error', '1tbs'],
+      
       'no-console': 'off',
     },
   },
